@@ -76,7 +76,7 @@ git checkout linuxport
 git submodule init && git submodule update
 
 # Frequenz-Fix (RX 438.3625 MHz / TX 430.7625 MHz)  
-sed -i 's/double rxFreq = 434.0e6, txFreq = 434.0e6;/double rxFreq = 438362500.0, txFreq = 430762500.0;/g' IOLinux.cpp
+sed -i 's/double rxFreq = 434.0e6, txFreq = 434.0e6;/double rxFreq = 430762500.0, txFreq = 438362500.0;/g' IOLinux.cpp
 
 # Kompilieren  
 make -f Makefile.Linux clean  
